@@ -1,0 +1,28 @@
+{
+  "pages": {
+    "index.html": {
+      "meta_description": true,
+      "canonical": true,
+      "jsonld_types": [
+        "Organization"
+      ],
+      "faq_count": 0
+    },
+    "article.html": {
+      "meta_description": true,
+      "canonical": true,
+      "jsonld_types": [
+        "Article"
+      ],
+      "faq_count": 0
+    },
+    "faq.html": {
+      "meta_description": true,
+      "canonical": true,
+      "jsonld_types": [
+        "FAQPage"
+      ],
+      "faq_count": 20
+    }
+  }
+}

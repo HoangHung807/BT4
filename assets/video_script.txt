@@ -1,0 +1,38 @@
+TechReview — Kịch bản video demo 5 phút (đọc theo từng giây)
+
+0:00–0:10 — Mở đầu (giọng tươi, rõ)
+"Xin chào — tôi là [Tên], và đây là TechReview: hướng dẫn chọn điện thoại và tư vấn công nghệ. Trong 5 phút tôi sẽ minh họa quy trình từ nghiên cứu từ khóa, xây nội dung có cấu trúc, gắn Schema, tối ưu tốc độ và kiểm tra trên AI Search."
+
+0:10–0:50 — Nghiên cứu từ khóa & FAQ (show file `data/keyword-research.csv` và `data/faq-questions.csv`)
+"Bước đầu là chọn bộ từ khóa mục tiêu — tôi giữ 20 từ khóa có intent thông tin và tư vấn mua. Đồng thời tổng hợp 20 câu hỏi FAQ từ 'People Also Ask' và forum. Những câu hỏi này ngắn, rõ ràng, và chính là cách người dùng thường hỏi AI."
+"Ví dụ: 'Điện thoại nào tốt dưới 10 triệu?' — đây là câu hỏi dạng transactional/informational."
+
+0:50–1:40 — Viết nội dung chất lượng (mở `article.html`)
+"Khi viết bài, bắt đầu bằng TL;DR để trả lời ngay câu hỏi chính. Sau đó dùng bullet points cho điểm chính, và table để so sánh đặc tính — giúp người xem và AI nắm nhanh thông tin." 
+"Luôn dẫn chứng nguồn uy tín: nhà sản xuất, kết quả benchmark, bài review chuyên sâu — điều này giúp AI trích dẫn chính xác và tăng trust."
+
+1:40–2:20 — Cài đặt Schema (mở khu vực JSON‑LD trong trang)
+"Tiếp theo gắn Schema JSON‑LD: `Organization` cho thông tin site, `Article` cho bài, và `FAQPage` cho danh sách câu hỏi. Quan trọng: trường `url` và `@id` phải là absolute URL trỏ tới domain public — nếu dùng ngrok hay Netlify, hãy thay placeholder bằng URL đó." 
+"Sau chỉnh sửa, chạy validator để xác nhận schema được đọc."
+
+2:20–3:10 — Tối ưu tốc độ & responsive (mở `css/style.css`, minh họa `loading="lazy"`)
+"Tối ưu bao gồm: lazy‑load ảnh, preload font/CSS quan trọng, defer JS không cần thiết, và dùng `srcset` cho ảnh. Những bước này giảm LCP/CLS và giúp bot thu thập dữ liệu không bị timeout." 
+"Nếu bạn có Lighthouse, hãy so sánh trước và sau để thấy cải thiện."
+
+3:10–4:00 — Kiểm tra trên AI Search (Rich Results + test queries)
+"Bây giờ đưa trang lên public (ngrok hoặc Netlify) và mở Google Rich Results Test. Nếu Google báo lỗi 'Cannot fetch', kiểm tra URL public, JSON‑LD absolute URL, và firewall." 
+"Tiếp theo, copy 3 truy vấn từ `data/ai-queries.csv` và chạy trên Bing Chat hoặc Perplexity để xem AI có trích dẫn đúng không. Nếu AI không trích dẫn, điều chỉnh FAQ/metadata để làm rõ thực thể."
+
+4:00–4:30 — Ví dụ thực tế (show 1 truy vấn và kết quả)
+"Ví dụ truy vấn: 'Nên mua iPhone hay Android 2026 cho sinh viên?' — nhìn vào câu trả lời AI, kiểm tra phần trích dẫn: có link về TechReview không? Nếu có, ta đã thành công."
+
+4:30–4:50 — Tổng kết (tóm tắt 5 bước)
+"Tóm tắt: 1) chọn từ khóa + FAQ; 2) viết TL;DR + bullets + table + nguồn; 3) gắn JSON‑LD absolute URLs; 4) tối ưu tốc độ & responsive; 5) test AI và lặp lại." 
+
+4:50–5:00 — Call to action
+"Muốn tôi chạy ngrok và cập nhật JSON‑LD, hay deploy lên Netlify để lấy URL ổn định? Chọn 1 trong 2 và tôi sẽ tiếp tục. Cảm ơn và hẹn gặp lại!"
+
+Ghi chú cho người đọc video:
+- Đọc chậm, rõ; dùng con trỏ chuột highlight phần file khi nói tới nó.
+- Giữ từng đoạn không quá dài để người xem dễ theo.
+- Thêm subtitle từ file này khi dựng video để viewer dễ theo dõi.

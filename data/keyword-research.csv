@@ -1,0 +1,21 @@
+STT,Tu khoa,Search Intent,Nhom chu de,Do uu tien,Trang muc tieu
+1,dien thoai gia re,Informational,Giá & Thương mại,High,index.html
+2,dien thoai tot nhat 2026,Informational,Đánh giá,High,article.html
+3,dien thoai tot duoi 10 trieu,Commercial Investigation,Phan khuc gia,High,faq.html
+4,dien thoai cho game,Informational,Game,High,article.html
+5,dien thoai chup anh tot,Informational,Camera,High,article.html
+6,nen mua iphone hay samsung,Informational,So sanh,High,faq.html
+7,dien thoai pin tot,Informational,Pin,Medium,article.html
+8,dien thoai cho sinh vien,Transactional,Phan khuc gia,Medium,article.html
+9,mua dien thoai cu,Commercial Investigation,Used phones,Medium,faq.html
+10,dien thoai man hinh 120hz,Informational,Man hinh,Low,article.html
+11,dien thoai camera tele,Informational,Camera,Low,article.html
+12,dien thoai sac nhanh co hai,Informational,Pin,Low,article.html
+13,dien thoai tam trung tot,Commercial Investigation,Phan khuc gia,High,article.html
+14,dien thoai android hay ios,Informational,He dieu hanh,High,faq.html
+15,mua dien thoai online an toan,Informational,Mua hang,Medium,faq.html
+16,dien thoai gon nhe,Informational,Thiet ke,Low,index.html
+17,dien thoai co khe the nho,Informational,Tinh nang,Low,faq.html
+18,dien thoai nay co update khong,Informational,Update,Medium,faq.html
+19,dien thoai google pixel co tot khong,Commercial Investigation,Brand,Medium,article.html
+20,dien thoai gia duoi 5 trieu,Transactional,Phan khuc gia,Medium,faq.html
