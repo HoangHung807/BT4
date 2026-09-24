@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Demo — TechReview</title>
+  <style>body{font-family:system-ui,Arial;max-width:900px;margin:24px auto;padding:0 16px}h1{font-size:20px}article{border-bottom:1px solid #eee;padding:12px 0}a.source{color:#0366d6}</style>
+</head>
+<body>
+  <h1>AI Demo — TechReview</h1>
+  <p>Generated demo answers for sample queries. Each answer cites a source page from the site.</p>
+  <div id="results">
+  </div>
+  <script>
+  fetch('ai_demo_results.json').then(r=>r.json()).then(list=>{
+    const container=document.getElementById('results');
+    list.forEach(item=>{
+      const art=document.createElement('article');
+      art.innerHTML=`<h2>${item.query}</h2><p>${item.answer.replace(/\n/g,'<br>')}</p><p><a class="source" href="${item.source}" target="_blank">${item.source}</a></p>`;
+      container.appendChild(art);
+    })
+  })
+  </script>
+</body>
+</html>
